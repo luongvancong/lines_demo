@@ -4,6 +4,8 @@ require_once 'vendor/autoload.php';
 
 $inputJSON = file_get_contents('php://input');
 
-var_dump($inputJSON);
-
-file_put_contents('logs/webhook.log', $inputJSON);
+if($inputJSON) {
+    file_put_contents('logs/webhook.log', $inputJSON, FILE_APPEND);
+} else {
+    file_put_contents('logs/webhook.log', json_encode($_POST), FILE_APPEND);
+}
