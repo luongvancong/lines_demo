@@ -1,0 +1,22 @@
+{
+    "name": "Lines Demo",
+    "description": "Lines Demo.",
+    "keywords": ["framework", "lines"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "linecorp/line-bot-sdk": "^1.4"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+
+    },
+    "autoload-dev": {
+
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
