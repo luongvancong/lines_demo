@@ -10,4 +10,4 @@ $data['input'] = json_decode($inputJSON);
 $data['POST'] = $_POST;
 $data['GET'] = $_GET;
 
-file_put_contents('logs/webhook.log', $data);
+file_put_contents('logs/webhook.log', json_encode($data));
