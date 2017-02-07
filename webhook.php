@@ -9,3 +9,5 @@ if($inputJSON) {
 } else {
     file_put_contents('logs/webhook.log', json_encode($_POST), FILE_APPEND);
 }
+
+file_put_contents('logs/webhook.log', "GET:-->".json_encode($_GET), FILE_APPEND);
